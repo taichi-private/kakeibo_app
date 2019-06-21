@@ -1,3 +1,5 @@
+import './stylesheets/sample.scss';
+
 import Vue from 'vue'
 
 import App from './javascripts/components/App' // 作ったやつ

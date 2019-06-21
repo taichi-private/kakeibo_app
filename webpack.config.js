@@ -23,6 +23,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['vue-style-loader', 'css-loader'] // css-loader -> vue-style-loaderの順で通していく
+      },
+      {
+        test: /\.scss$/,
+        use: [
+            "style-loader", // creates style nodes from JS strings
+            "css-loader", // translates CSS into CommonJS
+            "sass-loader" // compiles Sass to CSS, using Node Sass by default
+        ]
       }
     ]
   },
