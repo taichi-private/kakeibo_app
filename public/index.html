@@ -5,6 +5,27 @@
     <title>Vue app</title>
   </head>
   <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBgJtJrJDUReT4lYmPJ3AhPzObdMgQIOIg",
+        authDomain: "kakeibo-app-1b54b.firebaseapp.com",
+        databaseURL: "https://kakeibo-app-1b54b.firebaseio.com",
+        projectId: "kakeibo-app-1b54b",
+        storageBucket: "",
+        messagingSenderId: "353188544509",
+        appId: "1:353188544509:web:34187b14a3e05827"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  
     <div id="app"></div>
     <script src="bundle.js"></script>
   </body>
