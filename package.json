@@ -30,6 +30,8 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "firebase": "^6.2.3",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6"
   }
 }
