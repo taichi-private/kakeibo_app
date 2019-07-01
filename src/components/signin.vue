@@ -30,7 +30,7 @@ export default {
           this.$router.push('/')
         },
         err => {
-          this.alert = true 
+          this.alert = true
         }
       )
     }
