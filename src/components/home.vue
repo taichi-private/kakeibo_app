@@ -1,13 +1,23 @@
 <template>
   <div>
     <p>ここはhomeです。</p>
-    <router-link to="/signup">登録する</router-link>
-    <router-link to="/login">ログインする</router-link>
+    <button @click="logOut">ログアウトする</button>
   </div>
 </template>
 
 <script>
-</script>
+import firebase from 'firebase'
 
-<style>
-</style>
+export default {
+  name: 'Signin',
+  data: function () {
+    return {
+    }
+  },
+  methods: {
+    logOut: function() {
+      firebase.auth().signOut()
+    }
+  }
+}
+</script>
