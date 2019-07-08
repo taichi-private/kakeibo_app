@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import home from '../components/home'
+import mypage from '../components/mypage/top'
+import mypageIncome from '../components/mypage/income'
 import signin from '../components/signin'
 import signup from '../components/signup'
 import test from '../components/test'
@@ -13,7 +15,16 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      component: home,
+      component: home
+    },
+    {
+      path: '/mypage',
+      component: mypage,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/mypage/income',
+      component: mypageIncome,
       meta: { requiresAuth: true }
     },
     {
